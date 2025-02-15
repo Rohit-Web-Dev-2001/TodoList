@@ -46,7 +46,7 @@ export const TodoAuthProvider = ({ children }) => {
   // Authenticator methods
   const SignUp = async (body) => {
     try {
-      const res = await axios.post("http://localhost:8000/auth/SignUp", body);
+      const res = await axios.post("https://todo-list-beckend.vercel.app/auth/SignUp", body);
       console.log(res.data);
 
       return res.data;
@@ -58,7 +58,7 @@ export const TodoAuthProvider = ({ children }) => {
   // SignIn method
   const SignIn = async (body) => {
     try {
-      const res = await axios.post("http://localhost:8000/auth/SignIn", body);
+      const res = await axios.post("https://todo-list-beckend.vercel.app/auth/SignIn", body);
       if (res?.data.msg) {
         return res?.data;
       } else {
