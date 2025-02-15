@@ -85,18 +85,20 @@ const Addtask = ({ setshowTaskorForm }) => {
           Add Tomorrow Task
         </button>
 
-        {/* <button
+           <button
           type="submit"
           className="btn btn-sm taskbtn shadow-lg"
           style={{
             background: " linear-gradient(135deg, #ff6b6b, #d63031)",
           }}
           onClick={(e) => {
+            e.preventDefault();
+            addTodaytodoTask();
             setshowTaskorForm("ShowTask");
           }}
         >
-          Show Tasks{" "}
-        </button> */}
+          Cancel{" "}
+        </button>
       </div>
     </div>
   );
