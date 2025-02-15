@@ -8,7 +8,11 @@ require('dotenv').config()
 connectDB();
 const app = express();
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.json({ 
+  origin: 'https://todo-list-mu-mauve-77.vercel.app/',  
+  methods: 'GET,POST,PUT,DELETE',
+  credentials: true,
+}));
 app.use("/todo", todoRouter);
 app.use("/auth", authRouter);
 app.get("/", (req,res)=>{
