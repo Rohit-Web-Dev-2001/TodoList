@@ -93,7 +93,6 @@ const Addtask = ({ setshowTaskorForm }) => {
           }}
           onClick={(e) => {
             e.preventDefault();
-            addTodaytodoTask();
             setshowTaskorForm("ShowTask");
           }}
         >
