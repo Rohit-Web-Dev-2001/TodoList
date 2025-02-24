@@ -8,7 +8,7 @@ const PreviousTasks = () => {
     <>
       <div className="task-list shadow" id="yesterday">
         <div className="d-flex gap-2 justify-content-between">
-          <h2>YESTERDAY
+          <h2>PREVIOUS
           </h2>
           <span className="mx-1 mt-2" style={{ fontSize: "1rem",color: "#f0e68c" }}>{date.getDate()-1}-{date.getMonth()+1}-{date.getFullYear()}</span>
         </div>
