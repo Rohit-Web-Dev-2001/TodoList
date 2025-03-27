@@ -26,7 +26,7 @@ const Todo = () => {
     <>
       {showTaskorForm === "ShowTask" ? (
         <>
-          <h1 className="text-white">TODO-LIST</h1>
+          <h1 className="text-white">TO-DO LIST</h1>
           <div className="btnContainer d-flex justify-content-end gap-2 mx-3">
           <button
               type="submit"
