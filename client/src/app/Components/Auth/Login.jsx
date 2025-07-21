@@ -59,7 +59,9 @@ const Login = ({ setauth }) => {
                 });
               }}
             />
-            <button type="submit">Log In</button>
+            <div className="button-container">
+              <button type="submit">Log In</button>
+            </div>
           </form>
           <p
             onClick={() => {
