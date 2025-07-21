@@ -8,6 +8,7 @@ const Main = () => {
   const { AuthData } = useContext(TodoAuthContext);
 
   return <>{!AuthData.email ? <Auth /> : <Todo />}</>;
+
 };
 
 export default Main;

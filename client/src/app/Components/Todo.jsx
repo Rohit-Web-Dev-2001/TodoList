@@ -29,7 +29,7 @@ const Todo = () => {
           <h1 className="text-white">Things to do</h1>
           <div className="btnContainer d-flex justify-content-end gap-2 mx-3">
             <div>
-              <h1>{AuthData.Username}</h1>
+              <h4>{AuthData.Username}</h4>
             </div>
             <div>
               <button
