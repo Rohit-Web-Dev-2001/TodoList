@@ -1,5 +1,17 @@
 const { default: mongoose } = require("mongoose");
 const TodoauthSchema = mongoose.Schema({
+  
+  firstName: {
+    type: String,
+    unique: true,
+    required: true,
+  },
+
+  lastName: {
+    type: String,
+    unique: true,
+    required: true,
+  },
   username: {
     type: String,
     unique: true,
