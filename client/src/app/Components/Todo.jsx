@@ -26,41 +26,45 @@ const Todo = () => {
     <>
       {showTaskorForm === "ShowTask" ? (
         <>
-          <h1 className="text-white">TO-DO LIST</h1>
+          <h1 className="text-white">Things to do</h1>
           <div className="btnContainer d-flex justify-content-end gap-2 mx-3">
-          <button
-              type="submit"
-              className="btn btn-sm taskbtn shadow-lg"
-              style={{
-                background: " linear-gradient(135deg, #ff6b6b, #d63031)",
-              }}
-              onClick={(e) => {
-                setshowTaskorForm("ShowAddTask");
-              }}
-            >
-              Add Task{" "}
-            </button>
-            <button
-              type="submit"
-              className="btn btn-sm taskbtn shadow-lg"
-              style={{
-                background: "linear-gradient(135deg, #6b6bff, #3036d6)",
-              }}
-              onClick={(e) => {
-                e.preventDefault();
-                localStorage.clear();
-                window.location.reload();
-              }}
-            >
-              Log Out{" "}
-            </button>
+            <div>
+              <h1>{AuthData.Username}</h1>
+            </div>
+            <div>
+              <button
+                type="submit"
+                className="btn btn-sm taskbtn shadow-lg"
+                style={{
+                  background: " linear-gradient(135deg, #ff6b6b, #d63031)",
+                }}
+                onClick={(e) => {
+                  setshowTaskorForm("ShowAddTask");
+                }}
+              >
+                Add Task{" "}
+              </button>
+              <button
+                type="submit"
+                className="btn btn-sm taskbtn shadow-lg"
+                style={{
+                  background: "linear-gradient(135deg, #6b6bff, #3036d6)",
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  localStorage.clear();
+                  window.location.reload();
+                }}
+              >
+                Log Out{" "}
+              </button>
+            </div>
           </div>
           <div className="todocontainer">
             <PreviousTasks />
             <TodayTasks />
             <TomorrowTasks />
           </div>
-            
         </>
       ) : (
         <div className="Taskcontainer">
