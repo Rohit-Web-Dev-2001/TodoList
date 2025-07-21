@@ -45,7 +45,7 @@ const Addtask = ({ setshowTaskorForm }) => {
     <div className="containerAddtask px-4 gap-2">
       <input
         type="text"
-        className="rounded p-1 shadow-lg"
+        className="rounded  shadow-lg"
         id="exampleInputEmail1"
         aria-describedby="emailHelp"
         autoComplete="off"

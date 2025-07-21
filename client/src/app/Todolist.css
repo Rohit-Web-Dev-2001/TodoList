@@ -53,14 +53,16 @@ h1 {
   max-width: 1500px;
 }
 
-input[type="text"] {
-  width: 100%; /* Set width to 100% for responsiveness */
-  max-width: 700px; /* Maximum width for larger screens */
-  height: 50px; /* Height of input */
-  font-size: 18px; /* Font size of input text */
-  padding: 10px; /* Padding inside the input */
-  border-radius: 10px; /* Rounded corners */
-  transition: all 0.3s ease; /* Transition effect for morphing */
+
+.containerAddtask input[type="text"] {
+  width: 100%;
+  max-width: 700px;
+  height: 50px;
+  font-size: 18px;
+  padding-left: 15px; /* Only left spacing */
+  padding-right: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
   color: white;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -68,6 +70,12 @@ input[type="text"] {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+.containerAddtask input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* lighter color */
+  padding-left: 5px; /* Not supported in all browsers */
+}
+
 
 .task-list {
   flex: 1;
