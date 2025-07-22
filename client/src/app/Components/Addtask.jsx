@@ -17,7 +17,7 @@ const Addtask = ({ setshowTaskorForm }) => {
     let newTodoTask = {
       ...todoTask,
       DATE: `${date.getDate()}`,
-      MONTH: `${date.getMonth()}`,
+      MONTH: `${date.getMonth()}`, 
       YEAR: `${date.getFullYear()}`,
     };
     const addedTodo = await addTodos(newTodoTask, AuthData);

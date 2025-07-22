@@ -9,7 +9,7 @@ import { TodoAuthContext } from "../Context/AuthContext";
 const Todo = () => {
   const { getAllTodos, dispatch, todoArr } = useContext(ToDoContext);
   const [showTaskorForm, setshowTaskorForm] = useState("ShowTask");
-  const { AuthData } = useContext(TodoAuthContext);
+  const {  AuthData } = useContext(TodoAuthContext);
   useEffect(() => {
     fetchTodos();
   }, [todoArr]);
@@ -27,11 +27,11 @@ const Todo = () => {
       {showTaskorForm === "ShowTask" ? (
         <>
           <h1 className="text-white">Things to do</h1>
-          <div className="btnContainer d-flex justify-content-end gap-2 mx-3">
+          <div className="  btnContainer d-flex 	justify-content-between gap-2 mx-3">
             <div>
               <h4>{AuthData.Username}</h4>
             </div>
-            <div>
+            <div className="d-flex gap-2">
               <button
                 type="submit"
                 className="btn btn-sm taskbtn shadow-lg"
